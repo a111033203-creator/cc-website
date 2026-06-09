@@ -1,16 +1,28 @@
-# CC Website
+# 毛孩第二個家
 
-This repository is prepared for the website owned by CC.
+「毛孩第二個家」是一個推廣領養代替購買的靜態網站，重點放在認養資訊、生命教育、故事傳播與互動媒合。
 
-Production URL:
-https://cc-ajct7ux4n-a111033203-creators-projects.vercel.app/
+## 網站內容
 
-Git author:
-- Name: CC
-- Email: a111033203@mail.shu.edu.tw
+- 首頁理念與快速入口
+- 待認養毛孩分類
+- 認養流程圖解
+- 認養適合度測驗
+- 毛孩故事
+- 飼養知識庫
+- 收容所與認養單位資訊
+- 常見問題
+- 成功認養牆
 
-## Notes
+## 檔案結構
 
-The current Vercel deployment is protected by Vercel authentication, so the
-live URL cannot be used to recover the site source code from this environment.
-Add the original project files here before pushing the repository to GitHub.
+- `index.html`：網站內容
+- `styles.css`：視覺設計與響應式排版
+- `script.js`：分類篩選與測驗互動
+- `assets/adoption-hero.png`：網站主視覺
+
+## 作者
+
+- GitHub: `a111033203-creator`
+- Name: `CC`
+- Email: `a111033203@mail.shu.edu.tw`
