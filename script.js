@@ -20,6 +20,51 @@ document.querySelectorAll("a[href^='#']").forEach((link) => {
   });
 });
 
+let hasTrackedVideoInterest = false;
+
+function trackVideoInterest() {
+  if (hasTrackedVideoInterest) {
+    return;
+  }
+
+  hasTrackedVideoInterest = true;
+  trackEvent("interested_user", {
+    user_label: "感興趣的使用者",
+    video_id: "cje2V2mZvWg",
+    video_url: "https://www.youtube.com/watch?v=cje2V2mZvWg"
+  });
+}
+
+function loadYouTubeApi() {
+  if (!document.querySelector("#adoptionVideo")) {
+    return;
+  }
+
+  const tag = document.createElement("script");
+  tag.src = "https://www.youtube.com/iframe_api";
+  document.head.appendChild(tag);
+}
+
+window.onYouTubeIframeAPIReady = function () {
+  const playerElement = document.querySelector("#adoptionVideo");
+
+  if (!playerElement || !window.YT) {
+    return;
+  }
+
+  new window.YT.Player("adoptionVideo", {
+    events: {
+      onStateChange(event) {
+        if (event.data === window.YT.PlayerState.PLAYING) {
+          trackVideoInterest();
+        }
+      }
+    }
+  });
+};
+
+loadYouTubeApi();
+
 filters.forEach((button) => {
   button.addEventListener("click", () => {
     const type = button.dataset.filter;
