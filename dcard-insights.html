@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dcard 寵物板情緒洞察 | 毛孩第二個家</title>
+  <meta name="description" content="Dcard 寵物板最新貼文 Firecrawl 動態滾動抓取分析，整理寵物熱門關鍵字、情緒傾向與內容建議。">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S2C9P1S1XG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-S2C9P1S1XG");
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="回到首頁">
+      <span class="brand-mark">家</span>
+      <span>毛孩第二個家</span>
+    </a>
+    <nav class="nav" aria-label="主要導覽">
+      <a href="index.html#adopt">我要認養</a>
+      <a href="index.html#quiz">適合度測驗</a>
+      <a href="index.html#knowledge">知識庫</a>
+      <a href="analytics.html">數據分析</a>
+      <a href="ptt-insights.html">PTT 洞察</a>
+      <a href="dcard-insights.html" aria-current="page">Dcard 洞察</a>
+    </nav>
+  </header>
+
+  <main class="insights-page dcard-page">
+    <section class="insights-hero dcard-hero">
+      <p class="eyebrow">Firecrawl 動態滾動抓取</p>
+      <h1>Dcard 寵物板最新貼文情緒與話題分析</h1>
+      <p>資料來源為 Dcard 寵物板公開頁面。透過 Firecrawl scrape 等待頁面渲染並多次向下滾動，共抓到 40 則貼文標題，本頁分析最新前 30 則貼文。</p>
+      <a class="button secondary" href="https://www.dcard.tw/f/pet" target="_blank" rel="noreferrer">查看資料來源</a>
+    </section>
+
+    <section class="insights-kpis" aria-label="Dcard 寵物板資料摘要">
+      <article><span>抓取工具</span><strong>Firecrawl</strong><small>scrape + scroll actions</small></article>
+      <article><span>抓到貼文</span><strong>40</strong><small>取最新 30 則分析</small></article>
+      <article><span>最大主題</span><strong>貓咪</strong><small>送養、保健、日常</small></article>
+      <article><span>主要情緒</span><strong>求助</strong><small>健康、救援、協尋</small></article>
+    </section>
+
+    <section class="insights-grid">
+      <article class="insights-card wide-card">
+        <div class="card-heading">
+          <p class="eyebrow">情緒傾向</p>
+          <h2>求助與焦慮佔比最高，但正向可愛內容也很有吸引力。</h2>
+        </div>
+        <div class="sentiment-bars" aria-label="情緒傾向比例圖">
+          <div style="--w:40%"><span>求助 / 焦慮</span><strong>約 40%</strong><i></i></div>
+          <div style="--w:27%"><span>正向 / 可愛</span><strong>約 27%</strong><i></i></div>
+          <div style="--w:23%"><span>中性請益</span><strong>約 23%</strong><i></i></div>
+          <div style="--w:10%"><span>公益 / 溫情</span><strong>約 10%</strong><i></i></div>
+        </div>
+      </article>
+
+      <article class="insights-card">
+        <div class="card-heading">
+          <p class="eyebrow">熱門關鍵字</p>
+          <h2>貓咪、送養、飼料、健康照護是核心關鍵字。</h2>
+        </div>
+        <div class="keyword-cloud dcard-cloud" aria-label="Dcard 熱門關鍵字">
+          <span class="xl">貓咪</span>
+          <span class="lg">送養</span>
+          <span class="lg">健康</span>
+          <span class="md">飼料</span>
+          <span class="md">狗狗</span>
+          <span>保健品</span>
+          <span>關節</span>
+          <span>皮膚</span>
+          <span>益生菌</span>
+          <span>協尋</span>
+          <span>救援</span>
+          <span>飲水量</span>
+        </div>
+      </article>
+
+      <article class="insights-card">
+        <div class="card-heading">
+          <p class="eyebrow">熱門話題</p>
+          <h2>健康、送養、飲食與日常紀錄最值得延伸。</h2>
+        </div>
+        <div class="topic-stack">
+          <span>貓咪送養與找家：橘貓、玳瑁、幼貓等貼文多</span>
+          <span>狗狗健康問題：吃太快、益生菌、皮膚照護</span>
+          <span>高齡寵物照顧：關節保養、皮膚、健康檢查</span>
+          <span>飲食選擇：飼料、濕食、含肉量、幼貓罐罐</span>
+          <span>走失協尋與救援：鸚鵡走失、受傷貓求救</span>
+        </div>
+      </article>
+
+      <article class="insights-card">
+        <div class="card-heading">
+          <p class="eyebrow">貼文樣貌</p>
+          <h2>前 30 則可歸納成六種內容型態。</h2>
+        </div>
+        <div class="category-bars compact-bars" aria-label="內容型態長條圖">
+          <div style="--w:100%"><span>貓咪日常 / 請益</span><strong>最高</strong><i></i></div>
+          <div style="--w:76%"><span>健康照護</span><strong>高</strong><i></i></div>
+          <div style="--w:68%"><span>送養找家</span><strong>高</strong><i></i></div>
+          <div style="--w:48%"><span>飼料保健</span><strong>中</strong><i></i></div>
+          <div style="--w:32%"><span>協尋救援</span><strong>中</strong><i></i></div>
+          <div style="--w:26%"><span>工具 / App</span><strong>新興</strong><i></i></div>
+        </div>
+      </article>
+
+      <article class="insights-card">
+        <div class="card-heading">
+          <p class="eyebrow">內容機會</p>
+          <h2>使用者不只想看貼文，也需要可操作的工具。</h2>
+        </div>
+        <div class="supply-list">
+          <div><strong>毛孩每日飲水量計算器</strong><span>呼應飲水量公式與健康照護問題</span></div>
+          <div><strong>認養前健康檢查清單</strong><span>新手接狗貓前最容易不知道該做什麼</span></div>
+          <div><strong>走失協尋指南</strong><span>協尋貼文情緒強、分享動機高</span></div>
+          <div><strong>送養文模板</strong><span>幫使用者完整呈現年齡、地點、個性與健康狀況</span></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="insights-summary">
+      <div>
+        <p class="eyebrow">套用建議</p>
+        <h2>把網站從認養展示，升級成飼主決策輔助平台。</h2>
+      </div>
+      <ol>
+        <li>優先補強貓咪內容：貓咪送養、貓咪新手照顧、貓咪行為問題。</li>
+        <li>知識庫加入狗狗吃太快、益生菌、皮膚照護、高齡關節保養。</li>
+        <li>新增「走失協尋」專區，提供緊急處理步驟與協尋文案模板。</li>
+        <li>把「適合度測驗」延伸成「命定毛孩推薦」，符合 Dcard 使用者的互動偏好。</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <strong>毛孩第二個家</strong>
+      <p>透過 Dcard 社群情緒與關鍵字洞察，讓網站內容更貼近飼主真實需求。</p>
+    </div>
+    <a class="button secondary" href="index.html">回到首頁</a>
+  </footer>
+</body>
+</html>
