@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>網站數據分析 | 毛孩第二個家</title>
+  <meta name="description" content="毛孩第二個家最近 30 天 GA4 網站成效資訊圖表。">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S2C9P1S1XG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-S2C9P1S1XG");
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="回到首頁">
+      <span class="brand-mark">家</span>
+      <span>毛孩第二個家</span>
+    </a>
+    <nav class="nav" aria-label="主要導覽">
+      <a href="index.html#adopt">我要認養</a>
+      <a href="index.html#quiz">適合度測驗</a>
+      <a href="index.html#stories">毛孩故事</a>
+      <a href="analytics.html" aria-current="page">數據分析</a>
+    </nav>
+  </header>
+
+  <main class="analytics-page">
+    <section class="analytics-hero">
+      <p class="eyebrow">GA4 數據儀表板</p>
+      <h1>最近 30 天網站使用者分析</h1>
+      <p>資料期間：2026/05/12 - 2026/06/10。這份資訊圖表整理使用者、來源、裝置、事件與每日流量，方便快速看懂網站目前成效。</p>
+    </section>
+
+    <section class="analytics-kpis" aria-label="網站核心指標">
+      <article><span>使用者</span><strong>11</strong><small>10 位新使用者</small></article>
+      <article><span>工作階段</span><strong>22</strong><small>平均每位使用者 2 次</small></article>
+      <article><span>頁面瀏覽</span><strong>56</strong><small>每次工作階段約 2.5 次瀏覽</small></article>
+      <article><span>事件總數</span><strong>160</strong><small>包含瀏覽、互動與點擊</small></article>
+    </section>
+
+    <section class="analytics-grid">
+      <article class="analytics-card wide-card">
+        <div class="card-heading">
+          <p class="eyebrow">每日趨勢</p>
+          <h2>6/4 是近 30 天流量高峰</h2>
+        </div>
+        <div class="trend-chart" aria-label="每日使用者與瀏覽量">
+          <div style="--views:5%; --users:25%"><span>5/12</span></div>
+          <div style="--views:5%; --users:25%"><span>5/13</span></div>
+          <div style="--views:5%; --users:0%"><span>5/14</span></div>
+          <div style="--views:5%; --users:25%"><span>5/19</span></div>
+          <div style="--views:16%; --users:50%"><span>5/26</span></div>
+          <div style="--views:5%; --users:0%"><span>6/1</span></div>
+          <div style="--views:53%; --users:25%"><span>6/2</span></div>
+          <div style="--views:68%; --users:50%"><span>6/3</span></div>
+          <div style="--views:100%; --users:100%"><span>6/4</span></div>
+          <div style="--views:11%; --users:25%"><span>6/5</span></div>
+          <div style="--views:11%; --users:25%"><span>6/9</span></div>
+          <div style="--views:11%; --users:25%"><span>6/10</span></div>
+        </div>
+        <div class="chart-legend">
+          <span><i class="legend-page"></i>頁面瀏覽</span>
+          <span><i class="legend-user"></i>使用者</span>
+        </div>
+      </article>
+
+      <article class="analytics-card">
+        <div class="card-heading">
+          <p class="eyebrow">流量來源</p>
+          <h2>Direct 人數最多，Referral 互動最好</h2>
+        </div>
+        <div class="bar-list">
+          <div><span>Direct</span><strong>9 人</strong><i style="--w:100%"></i></div>
+          <div><span>Referral</span><strong>1 人 / 5 互動階段</strong><i style="--w:64%"></i></div>
+          <div><span>Organic Social</span><strong>1 人 / 16 瀏覽</strong><i style="--w:42%"></i></div>
+          <div><span>Organic Search</span><strong>1 人</strong><i style="--w:22%"></i></div>
+        </div>
+      </article>
+
+      <article class="analytics-card">
+        <div class="card-heading">
+          <p class="eyebrow">裝置分布</p>
+          <h2>目前以桌機瀏覽為主</h2>
+        </div>
+        <div class="device-chart" aria-label="裝置分布">
+          <div class="donut"><span>91%<small>桌機</small></span></div>
+          <ul>
+            <li><b>Desktop</b><span>10 使用者 / 54 瀏覽</span></li>
+            <li><b>Mobile</b><span>1 使用者 / 2 瀏覽</span></li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="analytics-card">
+        <div class="card-heading">
+          <p class="eyebrow">熱門事件</p>
+          <h2>瀏覽與互動是目前主要行為</h2>
+        </div>
+        <div class="event-list">
+          <div><span>page_view</span><strong>56</strong></div>
+          <div><span>user_engagement</span><strong>37</strong></div>
+          <div><span>session_start</span><strong>28</strong></div>
+          <div><span>first_visit</span><strong>14</strong></div>
+          <div><span>觀看</span><strong>8</strong></div>
+          <div><span>分享</span><strong>8</strong></div>
+        </div>
+      </article>
+
+      <article class="analytics-card">
+        <div class="card-heading">
+          <p class="eyebrow">地區</p>
+          <h2>台灣瀏覽深度較高</h2>
+        </div>
+        <div class="region-list">
+          <div><strong>台灣</strong><span>4 使用者 / 47 瀏覽</span></div>
+          <div><strong>美國</strong><span>6 使用者 / 7 瀏覽</span></div>
+          <div><strong>未設定</strong><span>1 使用者 / 2 瀏覽</span></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="analytics-summary">
+      <div>
+        <p class="eyebrow">分析結論</p>
+        <h2>網站目前在起步期，下一步要提高互動。</h2>
+      </div>
+      <ol>
+        <li>把網站分享到 LINE、IG 或課堂群組，增加第一批真實使用者。</li>
+        <li>引導訪客播放影片與完成測驗，讓 `interested_user` 和 `quiz_submit` 累積資料。</li>
+        <li>一週後比較來源、裝置與互動事件，判斷哪個入口最能帶來高品質訪客。</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <strong>毛孩第二個家</strong>
+      <p>這份資訊圖表會隨著 GA4 分析需求持續更新。</p>
+    </div>
+    <a class="button secondary" href="index.html">回到首頁</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
