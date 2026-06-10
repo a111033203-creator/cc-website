@@ -819,6 +819,10 @@ h1 {
   font-weight: 800;
 }
 
+.trend-chart.compact-trend {
+  grid-template-columns: repeat(2, minmax(120px, 1fr));
+}
+
 .chart-legend {
   display: flex;
   gap: 16px;
@@ -885,6 +889,10 @@ h1 {
   place-items: center;
   border-radius: 50%;
   background: conic-gradient(var(--green) 0 91%, var(--sky) 91% 100%);
+}
+
+.donut.collecting {
+  background: conic-gradient(var(--green) 0 100%);
 }
 
 .donut span {
